@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show update destroy ]
-  before_action :authenticate_user!, only: [:show, :create, :update, :new, :destroy, :edit]
+  before_action :authenticate_user!, only: [:create, :update, :new, :destroy, :edit]
 
   # GET /articles
   def index
