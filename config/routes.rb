@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/member-data', to: 'members#show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   
+  get '/users/articles', to: 'users#show'
   resources :articles
   # Defines the root path route ("/")
   root "articles#index"
